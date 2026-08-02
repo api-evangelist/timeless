@@ -1,0 +1,40 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://www.timeless.investments, https://api.timeless.investments, https://support.timeless.investments
+hosts:
+  - host: https://www.timeless.investments
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 404
+      - path: /robots.txt
+        status: 200
+        note: 'Allows all crawlers; disallows /_2fa and /_internal; sitemap at /sitemap.xml'
+  - host: https://api.timeless.investments
+    note: 'Private backend API (AWS API Gateway; root returns {"message":"Missing Authentication Token"}). No public discovery surface.'
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /openapi.json
+        status: 404
+      - path: /swagger.json
+        status: 404
+  - host: https://support.timeless.investments
+    note: 'Intercom-hosted help center. Its /.well-known/security.txt (200) is Intercom''s own policy (Canonical: https://app.intercom.com/.well-known/security.txt), not published by Timeless — not claimed as a Timeless SecurityTxt artifact.'
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        third_party: intercom
+      - path: /robots.txt
+        status: 200

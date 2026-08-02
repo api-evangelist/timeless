@@ -1,9 +1,24 @@
 aid: timeless
 name: Timeless
-description: 'Timeless is a company surfaced as a portfolio company of eqt-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Timeless (Timeless Investments GmbH) is a Berlin-based fintech that lets people invest in
+  fractions of authenticated collectibles - luxury watches, classic cars, sneakers, fine wine, art, and
+  memorabilia - starting at 50 EUR through its iOS and Android app. Assets are curated, authenticated,
+  and securitized so users can buy, hold, and trade shares and exit when an asset sells. Backed by EQT
+  Ventures. Timeless is a consumer mobile-app platform and publishes no public developer portal or API;
+  its api.timeless.investments backend is private and authenticated.'
 url: https://raw.githubusercontent.com/api-evangelist/timeless/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.timeless.investments/api/image/timeless_opengraph_en?w=1980&q=90
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,11 +26,21 @@ x-backed-by:
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Fintech
+- Collectibles
+- Alternative Assets
+- Fractional Ownership
+- Investing
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +50,17 @@ maintainers:
 common:
 - type: Website
   url: https://www.timeless.investments/
+- type: Blog
+  url: https://www.timeless.investments/en/magazine
+- type: Support
+  url: https://support.timeless.investments/
+- type: TermsOfService
+  url: https://www.timeless.investments/en/general-terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.timeless.investments/en/privacy-policy/
+- type: WellKnown
+  url: well-known/timeless-well-known.yml
+- type: LLMsTxt
+  url: llms/timeless-llms.txt
+- type: DomainSecurity
+  url: security/timeless-domain-security.yml

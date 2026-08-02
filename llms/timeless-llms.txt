@@ -1,0 +1,23 @@
+# Timeless
+
+> Timeless (Timeless Investments GmbH, Berlin) is a fractional-investment platform for collectibles — luxury watches, classic cars, sneakers, wine, art, and memorabilia. Users buy fractions of authenticated collectible assets starting at 50 EUR through the Timeless iOS/Android app. Backed by EQT Ventures. Timeless publishes no public developer portal or API: api.timeless.investments is a private authenticated backend (AWS API Gateway) with no public documentation.
+
+Timeless is a consumer fintech mobile app; there is no public API surface, SDK, or developer documentation to integrate against.
+
+## Company
+
+- [Website (EN)](https://www.timeless.investments/en): Marketing site, drop calendar, and asset listings
+- [Assets](https://www.timeless.investments/en/assets): Current collectible asset offerings (fractions)
+- [Exits](https://www.timeless.investments/exits): Sold/exited assets
+- [Magazine](https://www.timeless.investments/en/magazine): Editorial blog on collectibles and investing
+- [About us](https://www.timeless.investments/en/about-us): Company background
+- [Support / Help Center](https://support.timeless.investments/): Intercom-hosted help center
+- [Terms and Conditions](https://www.timeless.investments/en/general-terms-and-conditions/)
+- [Privacy Policy](https://www.timeless.investments/en/privacy-policy/)
+- [Imprint](https://www.timeless.investments/en/imprint/)
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/timeless/refs/heads/main/apis.yml): APIs.json profile for Timeless in the API Evangelist network
+
+(Generated 2026-07-21 by the API Evangelist enrichment pipeline; method: generated — Timeless publishes no /llms.txt of its own: https://www.timeless.investments/llms.txt returned 404.)
